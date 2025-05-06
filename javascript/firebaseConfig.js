@@ -3,14 +3,14 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/11.6.1/firebase
 import { getAuth } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBDp-j5fYvraGOVIOs1XVTj7eJ9FprARXk",
-  authDomain: "estoque-petshop.firebaseapp.com",
-  databaseURL: "https://estoque-petshop-default-rtdb.firebaseio.com",
-  projectId: "estoque-petshop",
-  storageBucket: "estoque-petshop.firebasestorage.app",
-  messagingSenderId: "614855133687",
-  appId: "1:614855133687:web:36abdbc051a276e324c6f2",
-  measurementId: "G-P405EY3KJC",
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: "",
 };
 
 const app = initializeApp(firebaseConfig);
