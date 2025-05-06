@@ -1,0 +1,22 @@
+.header-content {
+  background-color: rgb(52, 52, 150);
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: rgb(52, 52, 150);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}

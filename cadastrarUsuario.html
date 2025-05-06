@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/headerFooter.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="container-central">
+      <h2>Cadastro</h2>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Email" />
+
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" placeholder="Senha" />
+
+      <p>Já possui conta? <a href="./login.html">Login</a></p>
+      <p>
+        Esqueceu a senha? <a href="./recuperar_acesso.html">Recuperar Senha</a>
+      </p>
+
+      <button id="btnCadastro">Cadastrar</button>
+      <div id="mensagemCadastro" class="mensagem"></div>
+    </div>
+    <div id="footer"></div>
+    <script>
+      // Função para importar e inserir componentes HTML
+      async function loadComponents() {
+        const headerResponse = await fetch("./componentes/header.html");
+        const headerContent = await headerResponse.text();
+        document.getElementById("header").innerHTML = headerContent;
+
+        const footerResponse = await fetch("./componentes/footer.html");
+        const footerContent = await footerResponse.text();
+        document.getElementById("footer").innerHTML = footerContent;
+      }
+
+      loadComponents();
+    </script>
+    <script type="module" src="./javascript/auth.js"></script>
+  </body>
+</html>

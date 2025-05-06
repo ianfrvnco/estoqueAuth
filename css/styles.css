@@ -1,0 +1,158 @@
+body {
+  background-color: #506fd3;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #1d1d1d;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin: 60px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid #1d1d1d;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(52, 52, 150);
+  color: #ffffff;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+  padding: 30px;
+}
+
+div #container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 50%;
+}
+
+.estoque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  margin-top: 50px;
+}
+
+.estoque h2 {
+  margin: 40px 0 0 0;
+}
+
+#itens {
+  padding-top: 50px;
+}
+
+.item-cadastrado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.item-cadastrado button {
+  margin: 5px;
+  width: 150px;
+  border-radius: 8px;
+}
+
+.item-cadastrado p {
+  display: flex;
+  flex-direction: row;
+}
+
+.item-cadastrado strong {
+  margin-right: 9px;
+  font-weight: bold;
+}
+
+.cadastro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cadastro label {
+  margin: 5px;
+  font-weight: bold;
+}
+
+.cadastro input {
+  margin-bottom: 15px;
+}
+
+.cadastro button {
+  width: 90px;
+  border-radius: 8px;
+}
+
+#formulario-edicao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 100%;
+  margin: 100px auto;
+}
+
+#formulario-edicao button {
+  width: 120px;
+  border-radius: 8px;
+  margin: 5px;
+}
+
+#container-central {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 100%;
+  margin: 100px auto;
+  padding: 30px;
+  background: rgb(52, 52, 150);
+  border-radius: 8px;
+  color: #ffffff;
+  box-shadow: #02008a 0px 0px 13px;
+}
+
+#container-central label,
+input,
+p,
+button {
+  margin: 9px;
+}
+
+#container-central a {
+  color: #db9c12;
+  text-decoration: none;
+}
+
+#container-central button {
+  width: 90px;
+  border-radius: 8px;
+}

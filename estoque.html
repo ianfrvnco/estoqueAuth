@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/headerFooter.css" />
+    <title>Estoque</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="container">
+      <div class="estoque">
+        <h2>Itens</h2>
+        <div id="itens">
+          <p>Carregando a lista...</p>
+        </div>
+      </div>
+
+      <div class="cadastro">
+        <h2>Cadastro</h2>
+        <label for="produto">Produto</label>
+        <input type="text" id="produto" />
+        <label for="quantidade">Quantidade</label>
+        <input type="number" id="quantidade" />
+        <button id="cadastrar">Cadastrar</button>
+      </div>
+    </div>
+    <div id="formulario-edicao" style="display: none">
+      <h2>Editar Funcionário</h2>
+      <label for="label-produto">Produto</label><br /><br />
+      <input type="text" id="editar-produto" /><br /><br />
+
+      <label for="label-quantidade">Quantidade</label><br /><br />
+      <input type="number" id="editar-quantidade" /><br /><br />
+
+      <input type="hidden" id="editar-id" />
+
+      <button id="btn-salvar-edicao">Salvar Alterações</button>
+      <button id="btn-cancelar-edicao">Cancelar</button>
+    </div>
+
+    <div id="footer"></div>
+    <script type="module" src="./javascript/firebaseConfig.js"></script>
+    <script type="module" src="./javascript/cadastro.js"></script>
+    <script type="module" src="./javascript/listagem.js"></script>
+    <script>
+      // Função para importar e inserir componentes HTML
+      async function loadComponents() {
+        const headerResponse = await fetch("./componentes/header.html");
+        const headerContent = await headerResponse.text();
+        document.getElementById("header").innerHTML = headerContent;
+
+        const footerResponse = await fetch("./componentes/footer.html");
+        const footerContent = await footerResponse.text();
+        document.getElementById("footer").innerHTML = footerContent;
+      }
+
+      loadComponents();
+    </script>
+  </body>
+</html>
